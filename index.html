@@ -26,7 +26,8 @@
 
         <header>
           <h1>GravityLight</h1>
-          <h2>lighting for a billion people</h2>
+          <h2>lighting for a billion people
+          </br><em>by Deciwatt</em></h2>
         </header>
 
         <hr>
@@ -58,6 +59,47 @@
             <p>Many would say that this trend just keeps pace with the increasing sophistication of computing. However it also has a flip side. It means that relatively simple devices progressively need less energy to run. Similar efficiencies have been seen in radio communication too, opening up the possibility of low cost, off-grid computing and communication equipment.</p>
 
             <p>We envisage other projects which bring together low power electronics with off-grid energy generation to connect the unconnected. Access to the worlds knowledge via the internet, peer to peer communication and education are possible for these people using todays electronics, if built from the ground up.</p>
+
+            <div class="expandable">
+		        <div>
+                    <h3>What will the funds be used for?</h3>
+                    <p>The funds we are currently seeking to raise will cover a trial of Gravity Light with target users. The aim of this trial is to give us insights into:</p>
+
+                    <ul>
+			            <li><strong>Environmental factors</strong> (such as particle ingress, humidity variation etc).</li>
+			            <li><strong>Installation</strong> (how easy or difficult the unit is for users to set up and understand).</li>
+			            <li><strong>Semantics</strong> (how the product is perceived / understood).</li>
+			            <li><strong>Power Range</strong> (if the range of adjustment and the power levels available are suitable for user's needs).</li>
+                        <li><strong>Linking</strong> (if linking multiple GL's together will offer benefits that are desirable to users).</li>
+                        <li><strong>Appropriate peripherals</strong> (task light, string of lights, radio, battery charger etc).</li>
+                        <li><strong>Life tests</strong> (how the system performs over an extended period).</li>
+                        <li><strong>Transit tests</strong> (how well the product stands up to the rigours of transportation).</li>
+                    </ul>
+
+                    <p>If additional funds are raised, over and above the Gravity Light trial requirements, there are other short-term and longer-term objectives we will seek to address:</p>
+                    
+                    <ul>
+                        In the short term
+                        <li><strong>Drop tests</strong> (controlled tests to asses resistance to accidental damage)</li>
+                        <li><strong>Final Drive</strong> (refinement and improvement to the final stage of the drive train to further increase efficiency and reduce production costs)</li>
+                        <li><strong>Generator</strong> (performance, efficiency and lifespan of AC generator vs. DC generator)</li>
+                        <li><strong>PWM</strong> (cost / benefit of pulsed light output vs. mechanical drive-train adjustment)</li>
+                        <li><strong>Cost optimisation</strong> (identification and implementation of further production cost reductions)</li>
+                        <li><strong>LED optimisation</strong> (identification of LED components to improve performance within cost targets)</li>
+                    </ul>
+
+                    <ul>
+                        In the longer term
+                        <li><strong>Can GL act as a 'battery'</strong> (adapting GL and target electronic devices so GL can act as a replacement for their on-board batteries)</li>
+                        <li><strong>Scalability</strong> (investigating the scalability of the principle for other applications)</li>
+                    </ul>
+                    The ultimate goal for our longer term research is to establish if/how small amounts of constant power can be utilised to provide access to the internet, from very remote locations, at incredibly low cost.
+
+		        </div>
+		        <div id="gradient"></div>
+	        </div>
+	        <div id="read-more"></div>
+
 
             <h3>Who are we?</h3>
 
@@ -93,6 +135,30 @@
                 // Target your .container, .wrapper, .post, etc.
                 $(".video").fitVids();
                 $(".button").hide();
+
+                var slideHeight = 75; // px
+	            var defHeight = $('.expandable').height();
+	            if(defHeight >= slideHeight){
+		            $('.expandable').css('height' , slideHeight + 'px');
+		            $('#read-more').append('<a href="#">&nbsp;</a>');
+		            $('#gradient, #read-more').click(function(){
+			            var curHeight = $('.expandable').height();
+			            if(curHeight == slideHeight){
+				            $('.expandable').animate({
+				              height: defHeight
+				            }, "normal");
+				            $('#read-more a').html('Close');
+				            $('#gradient').fadeOut();
+			            }else{
+				            $('.expandable').animate({
+				              height: slideHeight
+				            }, "normal");
+				            $('#read-more a').html('&nbsp;');
+				            $('#gradient').fadeIn();
+			            }
+			            return false;
+		            });
+	            }
             });
         </script>
 

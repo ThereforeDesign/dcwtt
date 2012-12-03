@@ -318,6 +318,44 @@ dl dt {
   color: #303030;
 }
 
+
+.expandable {
+position: relative;
+padding: 10px;
+overflow: hidden;
+}
+.expandable li {
+    font-size: .9em;
+}
+.expandable h3 {
+    color: #333;
+}
+#gradient {
+width:100%;
+height:35px;
+background:url(../images/bg-gradient.png) repeat-x;
+position:absolute;
+bottom:0;
+left:0;
+}
+#read-more {
+padding:5px;
+border-top:4px double #ddd;
+color:#333;
+cursor: pointer;
+text-align: right;
+}
+#read-more a {
+padding-right:22px;
+background:url(images/icon-arrow.gif) no-repeat 100% 50%;
+font-weight:bold;
+text-decoration:none;
+color:#333;
+}
+#read-more a:hover {color:#000;}
+
+
+
 footer {
   background: transparent url('../images/hr.png') 0 0 no-repeat;
   margin-top: 40px;
