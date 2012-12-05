@@ -46,6 +46,10 @@ table {
 	border-spacing: 0;
 }
 
+.underline {
+    border-bottom: 1px dotted #F15A24;
+}
+
 /* LAYOUT STYLES */
 body {
   font-size: 1em;
@@ -57,10 +61,37 @@ body {
 }
 
 a {
-  color: #d5000d;
+  color: #F15A24;
 }
 a:hover {
-  color: #c5000c;
+  color: #333;
+}
+
+#deciwatt_header {
+    display: block;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    background-color: #EEE;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 20px 90px rgba(0,0,0,.2);
+    font-size: .9em;
+}
+#deciwatt_header p.intro { font-size: .7em;}
+#deciwatt_header img {
+    display: block;
+    margin-left: 18px;
+    margin-bottom: 30px;
+}
+#deciwatt_header p {
+    display: block;
+    margin-left: 20px; margin-right: 20px;
+    margin-top: 20px;
+}
+#deciwatt_header blockquote {
+    padding: 0 20px;
+    padding-left: 40px;
+    border: 0px;
 }
 
 header {
@@ -259,7 +290,7 @@ h2 {
 } 
 
 h3 {
-  color: #d5000d;
+  color: #F15A24;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
@@ -355,7 +386,13 @@ color:#333;
 }
 #read-more a:hover {color:#000;}
 
-
+#float {
+    position: fixed;
+    margin-left: 640px;
+    width: 224px;
+    top: 160px;
+    text-align: center;
+}
 
 footer {
   background: transparent url('../images/hr.png') 0 0 no-repeat;
@@ -371,6 +408,32 @@ footer a {
 }
 footer a:hover {
   color: #444;
+}
+
+.soc-btn {
+    padding: 3px 0px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-right: 6px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    text-shadow: none;
+    border-radius: 3px;
+    float: left;
+    width: 70px;
+}
+a.fb {
+    background-color: #3B5998!important;
+}
+a.tw {
+    background-color: #1daced!important;
+}
+a.gp {
+    background-color: #DB4A39!important;
+    margin-right: 0;
 }
 
 /* MISC */
