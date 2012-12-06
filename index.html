@@ -16,7 +16,7 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>Help make it happen for GravityLight, lighting for a billion people</title>
+    <title>Help make it happen for GravityLight, lighting for the developing world</title>
 
     <script type="text/javascript">var switchTo5x=false;</script>
     <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
@@ -40,7 +40,7 @@
                 <a href="http://www.deciwatt.org"><img src="images/deciwatt_logo.png" alt="Deciwatt logo" height="50" /></a>
                 <p class="intro"></p>
                 <section>
-                    <p><strong>deciwatt.org</strong> is a research initiative focussed on low power devices within <a href="http://therefore.com">therefore.com</a>, a London based design and innovation company. <span style="border-bottom: 1px dotted #F15A24;"><a href="#gravitylight"></p>
+                    <p><strong>deciwatt.org</strong> is a research initiative focussed on low power devices within <a href="http://therefore.com">therefore.com</a>, a London based design and innovation company. <span style="border-bottom: 1px dotted #F15A24;"><a href="#" onclick="goToByScroll('gravitylight')"></p>
                     <p><strong>GravityLight</strong></a> is a product of this initiative.</span></p>
                     <p>We envisage other projects which bring together <span class="underline"><strong>low-power</strong> electronics with <strong>off-grid</strong> energy generation</span> to connect the unconnected. Access to the world's knowledge via the internet, peer to peer communication and education are possible for these people using today's electronics, if built from the ground up.</p>
                     <p><strong>deciwatt.org</strong> is our initiative to try to make this happen through our existing network of clients, and connections to groups who share our hopes for GravityLight.</p>
@@ -54,7 +54,7 @@
 
         <header id="gravitylight">
           <h1>GravityLight</h1>
-          <h2>lighting for a billion people</h2>
+          <h2>lighting for the developing world</h2>
         </header>
 
         <hr>
@@ -147,6 +147,11 @@
         <script src="javascripts/fitvids.js"></script>
         <script>
             $(document).ready(function () {
+
+                function goToByScroll(id) {
+                    $('html,body').animate({ scrollTop: $("#" + id).offset().top }, 'slow');
+                }
+
                 // Target your .container, .wrapper, .post, etc.
                 $(".video").fitVids();
                 $(".button").hide();
