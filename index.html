@@ -42,13 +42,17 @@
                 <section>
                     <p><strong>deciwatt.org</strong> is a research initiative focussed on low power devices within <a href="http://therefore.com">therefore.com</a>, a London based design and innovation company.</p>
                     <p><a href="#gravitylight"><strong>GravityLight</strong></a> is a product of this initiative.</p>
-                    <p>We envisage other projects which bring together <span class="underline"><strong>low-power</strong> electronics with <strong>off-grid</strong> energy generation</span> to connect the unconnected. Access to the world's knowledge via the internet, peer to peer communication and education are possible for these people using today's electronics, if built from the ground up.</p>
+ 
+                    <div class="expandable">
+		                            <p>We envisage other projects which bring together <span class="underline"><strong>low-power</strong> electronics with <strong>off-grid</strong> energy generation</span> to connect the unconnected. Access to the world's knowledge via the internet, peer to peer communication and education are possible for these people using today's electronics, if built from the ground up.</p>
                     <p><strong>deciwatt.org</strong> is our initiative to try to make this happen through our existing network of clients, and connections to groups who share our hopes for GravityLight.</p>
                     <p><a href="http://therefore.com"><em><strong>therefore</strong></em></a> has over 20 years of experience in designing and developing handheld computing and communication products for a host of pioneers including Psion, Toshiba, NEC, TomTom, Inmarsat, ICO, Sepura, Racal Acoustics, Voller energy etc. We work at the heart of an industry which is driven by Moore's law. However there is another less known parallel trend, called Koomey's law.</p>
                     <blockquote><a href="http://en.wikipedia.org/wiki/Koomey%27s_law">Koomey's law</a> describes a long-term trend in the history of computing hardware. The number of computations per joule of energy dissipated has been doubling approximately every 1.57 years. This trend has been remarkably stable since the 1950s (R2 of over 98%) and has actually been somewhat faster than Moore’s law. Jonathan Koomey articulated the trend as follows: “at a fixed computing load, the amount of battery you need will fall by a factor of two every year and a half.”<sup>[<a href="http://en.wikipedia.org/wiki/Koomey%27s_law">1</a>]</sup></blockquote>
                     <p>Many would say that this trend just keeps pace with the increasing sophistication of computing. However it also has a flip side. It means that relatively simple devices progressively need less energy to run. Similar efficiencies have been seen in radio communication too, opening up the possibility of low cost, off-grid computing and communication equipment. </p>
-                    <p>Our vision has evolved from two self-funded projects exploring low power opportunities and solutions for the developing world. The first was the <strong>Talking Stick</strong> project, presented to Cambridge Wireless as a concept to bring communication to the unconnected. The second is <a href="#gravitylight"><strong>GravityLight</strong></a>, an off-line project which is now at a working prototype stage, seeking funding via Indiegogo.</p> 
-                    
+                    <p>Our vision has evolved from two self-funded projects exploring low power opportunities and solutions for the developing world. The first was the <strong>Talking Stick</strong> project, presented to Cambridge Wireless as a concept to bring communication to the unconnected. The second is <a href="#gravitylight"><strong>GravityLight</strong></a>, an off-line project which is now at a working prototype stage, seeking funding via Indiegogo.</p>
+		        <div class="gradient"></div>
+	        </div>
+	        <div class="read-more"></div>
                 </section>
         </div>
 
@@ -68,17 +72,40 @@
 
             <p>We are working flat out to complete the production specification and already have the second tranche of tooling underway with our supplier in China. We hope to minimise any delay caused by the imminent Chinese New Year holiday and will be sending separate updates on progress in a few weeks.</p>
             
-            <p>We are also continuing to receive requests for further pledges so we will set these up in the next couple of days on this page. Please stay put for updates.</p>
+            <p>The interest in this campaign has been and continues to be overwhelming, with lot's of people interested in pledging beyond the end of the campaign.
+            <strong>If you would like to support the Deciwatt cause you can <a href="#donate">donate</a> using the donation button below.</strong></p>
+
+            <p><strong>For updates about our manufacturing plans following our trial you can <a href="#subscribe">subscribe to the newsletter</a>.</strong></p>
 
             <p>Once again, thank you for your support, <br />
-            <a href="mailto:info@gravitylight.org">Team Deciwatt<br />info@gravitylight.org</a></p>
+            <a href="mailto:info@gravitylight.org">Team Deciwatt<br />info@gravitylight.org</a><br />
+            </p>
+
+            <p style="text-align: right">22 January 2013</p>
 
         </section>
 
         <hr>
         
-        <section id="buttons" class="clearfix"> 
-          <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DQF5HCRWQ7R7Q" class="button"><span>Donate for further development</span></a>
+        <section id="buttons" class="clearfix">
+          <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DQF5HCRWQ7R7Q" class="button" id="donate"><span>Donate for further development</span></a>
+        </section>
+
+        <hr>
+
+        <section id="subscribe">
+            
+                <form id="subscribe-form" method="post" action="https://tinyletter.com/thereforedesign">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to Deciwatt &amp; GravityLight newsletter. We will keep you up to date with the latest developments and any future campaigns.</p>
+                    <label for="email">Enter your email address to subscribe.</label>
+                    <div class="email-group">
+                        <input type="email" id="email" name="email" value="">
+                        <button class="button_sub" type="submit">Subscribe</button>
+                    </div>
+                    
+                    
+                </form>
         </section>
 
         <hr>
@@ -144,9 +171,9 @@
                     The ultimate goal for our longer term research is to establish if/how small amounts of constant power can be utilised to provide access to the internet, from very remote locations, at incredibly low cost.
 
 		        </div>
-		        <div id="gradient"></div>
+		        <div class="gradient"></div>
 	        </div>
-	        <div id="read-more"></div>
+	        <div class="read-more"></div>
 
         </section>
 
@@ -187,21 +214,21 @@
 	            var defHeight = $('.expandable').height();
 	            if(defHeight >= slideHeight){
 		            $('.expandable').css('height' , slideHeight + 'px');
-		            $('#read-more').append('<a href="#">more</a>');
-		            $('#gradient, #read-more').click(function(){
+		            $('.read-more').append('<a href="#">more</a>');
+		            $('.gradient, .read-more').click(function(){
 			            var curHeight = $('.expandable').height();
 			            if(curHeight == slideHeight){
 				            $('.expandable').animate({
 				              height: defHeight
 				            }, "normal");
-				            $('#read-more a').html('Close');
-				            $('#gradient').fadeOut();
+				            $('.read-more a').html('Close');
+				            $('.gradient').fadeOut();
 			            }else{
 				            $('.expandable').animate({
 				              height: slideHeight
 				            }, "normal");
-				            $('#read-more a').html('more');
-				            $('#gradient').fadeIn();
+				            $('.read-more a').html('more');
+				            $('.gradient').fadeIn();
 			            }
 			            return false;
 		            });
