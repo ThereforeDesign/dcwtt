@@ -398,7 +398,6 @@ cursor: pointer;
 }
 .read-more {
 padding:5px;
-border-top:4px double #ddd;
 color:#333;
 cursor: pointer;
 text-align: right;
