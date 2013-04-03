@@ -106,6 +106,7 @@ a:hover {
     color: #666;
     text-shadow: 0px #FFF;
 }
+.notice p { font-size: .8em; }
 .hightlight {
     color: #F15A24;
 }
