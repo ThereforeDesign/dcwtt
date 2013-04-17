@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+
+    <meta name="description" content="There are currently over 1.5 billion people in the World who have no reliable access to mains electricity. GravityLight aims to tackle this problem and with your support it can become reality.">
+    <meta name="keywords" content="gravity light, gravitylight, deciwatt, low power, kickstarter, electricity, kerosene, lamp, lighting, light, koomey law, therefore, design">
+
+      <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Updates > GravityLight, lighting for the developing countries</title>
+
+    <script type="text/javascript">var switchTo5x=false;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "ur-1943910b-db81-8f7d-c5dc-3d98e5d066e1"});</script>
+  </head>
+
+  <body class="bg2">
+  <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <div id="container">
+      <div class="inner">
+
+        <div id="deciwatt_header">
+            <a href="http://www.deciwatt.org"><img src="/images/deciwatt_logo.png" alt="Deciwatt logo" height="50" /></a>
+            <p class="intro"></p>
+        </div>
+        
+        <header id="gravitylight">
+          <h1>GravityLight</h1>
+          <h2>lighting for the developing countries</h2>
+        </header>
+
+          <hr>
+
+        <section class="clearfix notice">
+            <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'deciwatt'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+        </section>
+
+        <footer>
+          GravityLight is maintained by <a href="http://therefore.co.uk">Therefore</a>: Product Design Consultants<br>
+          This page is hosted by <a href="http://pages.github.com">GitHub Pages</a>. Based on Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        <script type="text/javascript">
+                var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+                document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+                </script>
+                <script type="text/javascript">
+                try {
+                var pageTracker = _gat._getTracker("UA-36327755-1");
+                pageTracker._trackPageview();
+                } catch(err) {}
+        </script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="javascripts/fitvids.js"></script>
+        <script>
+            $(document).ready(function () {
+
+                function goToByScroll(id) {
+                    $('html,body').animate({ scrollTop: $("#" + id).offset().top }, 'slow');
+                }
+
+                // Target your .container, .wrapper, .post, etc.
+                $(".video").fitVids();
+
+
+                var slideHeight = 75; // px
+	            var defHeight = $('.expandable').height();
+	            if(defHeight >= slideHeight){
+		            $('.expandable').css('height' , slideHeight + 'px');
+		            $('#read-more').append('<a href="#">more</a>');
+		            $('#gradient, #read-more').click(function(){
+			            var curHeight = $('.expandable').height();
+			            if(curHeight == slideHeight){
+				            $('.expandable').animate({
+				              height: defHeight
+				            }, "normal");
+				            $('#read-more a').html('Close');
+				            $('#gradient').fadeOut();
+			            }else{
+				            $('.expandable').animate({
+				              height: slideHeight
+				            }, "normal");
+				            $('#read-more a').html('more');
+				            $('#gradient').fadeIn();
+			            }
+			            return false;
+		            });
+	            }
+            });
+        </script>
+
+      </div>
+    </div>
+  </body>
+</html>
