@@ -1,0 +1,32 @@
+body {
+  background: #e7e7e7 url(../images/noisy_grid.png) 0 0 repeat fixed;
+}
+p {
+    font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+}
+
+h3 {
+  font-family: 'Titillium Web', 'Helvetica Neue', Helvetica, Arial, serif; font-weight: 300;
+  letter-spacing: -1px;
+  font-size: 48px;
+  color: #303030;
+}
+
+
+.panel {
+    background: #EEE;
+    border-radius: .2em;
+    box-shadow: 0 20px 90px rgba(0,0,0,.2);
+    border: 0px solid black;
+}
+
+.sticky {
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+    box-shadow: 0 20px 90px rgba(0,0,0,.2);
+}
+
+.video { margin: 0 0 50px 0; }
