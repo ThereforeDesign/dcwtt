@@ -129,6 +129,7 @@ a:hover {
     column-count: 3;
     column-gap: 20px;
     font-size: .8em;
+    text-transform: capitalize;
 }
 header {
   padding-top: 35px;
